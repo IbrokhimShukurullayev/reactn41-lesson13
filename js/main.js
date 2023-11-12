@@ -29,6 +29,8 @@ function toggleBacktop() {
 
 const loading = document.getElementById("loading");
 
-window.addEventListener("load", () => {
-  loading.classList.add('loading-none');
-});
+const loadingDuration = 1000; // 1s
+
+setTimeout(() => {
+  loading.classList.add("loading-none");
+}, loadingDuration);
